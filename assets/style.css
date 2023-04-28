@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Indie+Flower&family=Poppins:ital,wght@1,200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    --verde-carro: #00464d;
+    --laranja-carro: #f37a17;
+    --azul-carro: #2e7fdb;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1100px;
+    height: 100px;
+    background-color: #000000;
+}
+
+.logo {
+    margin-left: 30px;
+    color: #FFFFFF;
+}
+
+.menu nav ul {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    margin-right: 30px;
+    list-style-type: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: var(--azul-carro);
+    color: var(--laranja-carro);
+    border-radius: 10px;
+    transition: background-color 1.2s ease;
+}
+
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin:auto;
+    background-color: var(--verde-carro);
+}
+
+.textoPromocional {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 50px;
+}
+
+.textoPromocional h1 {
+    font-size: 6vw;
+    color: var(--azul-carro);
+    text-align: center;
+}
+
+.textoPromocional h2 {
+    font-size: 4vw;
+    color: var(--laranja-carro);
+    text-align: center;
+    margin-left: 90px;
+    padding-left: 60px;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.caracteristicas img {
+    max-width: 60px;
+}
+
+.fichaTecnica {
+    margin-bottom: 30px;
+}
+
+.imagemDoCarro {
+    width: 100%;
+    height: auto;
+    margin: 40px;
+}
+
+.imagemDoCarro img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+
