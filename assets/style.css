@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Indie+Flower&family=Poppins:ital,wght@1,200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     --verde-carro: #00464d;
     --laranja-carro: #f37a17;
     --azul-carro: #2e7fdb;
+}
+
+body {
+    background-image: url(imagens/parede-preta-pontilhada.jpg);
+    
 }
 
 header {
@@ -33,14 +40,16 @@ nav ul li{
     list-style-type: none;
     color: white;
     font-weight: bold;
-    padding: 10px;
+    font-size: 1.1rem;
+    padding: 8px;
 }
 
 nav ul li:hover {
     background-color: var(--azul-carro);
     color: var(--laranja-carro);
-    border-radius: 10px;
+    border-radius: 8px;
     transition: background-color 1.2s ease;
+    cursor: pointer;
 }
 
 .container {
@@ -88,14 +97,33 @@ nav ul li:hover {
 
 .fichaTecnica h3 {
     margin-bottom: 20px;
+    font-family: 'Abel', sans-serif;
 }
 
 .fichaTecnica p {
+    font-family: 'Abel', sans-serif;
     margin-bottom: 10px;
 }
 
 .atributos {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.atributos h3 {
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px 10px 10px;
+}
+
+.atributos h3:hover {
+    color: var(--laranja-carro);
+    transition: 0.5s;
+}
+
+.atributos img {
+    margin: 8px;
 }
 
 .imagemDoCarro {
@@ -107,7 +135,35 @@ nav ul li:hover {
 .imagemDoCarro img{
     max-width: 100%;
     height: auto;
-    
+    border-radius: 8px;
 }
 
+.textoTecnico1, .textoTecnico2 {
+    margin: 20px;
+}
+.descricao {
+    margin: 15px;
+}
+
+.descricao h2 {
+    margin-bottom: 15px;
+    color: var(--laranja-carro);
+}
+
+.descricao h2:hover {
+    color: var(--azul-carro);
+    transition: 0.8s;
+}
+
+.descricao p {
+    font-family: 'Abel', sans-serif;
+    color: #FFFFFF;
+}
+
+.descricao:hover {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.8s ease;
+}
 
